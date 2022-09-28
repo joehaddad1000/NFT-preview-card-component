@@ -31,17 +31,28 @@ body {
 .container {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   background-color: hsl(216, 50%, 16%);
   max-width: 23.4375rem;
-  border-radius: 15px;
+  border-radius: .7rem;
+  padding: 1.35rem;
+  margin: 2rem;
 }
 
 .image {
   width: 100%;
-  border-radius: 15px;
-  padding: 1rem;
+  border-radius: .7rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-block: 1.4rem;
+}
+
+p {
+  color: var(--Soft-blue);
+  line-height: 1.7rem;
 }
 
 /*footer*/
