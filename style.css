@@ -55,6 +55,30 @@ p {
   line-height: 1.7rem;
 }
 
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9.375rem;
+}
+
+.eth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-weight: bold;
+  text-align: center;
+}
+
+.eth img {
+  padding-inline: .3rem;
+}
+
+.eth p {
+  color: var(--Cyan);
+}
+
 /*footer*/
 .attribution {
   font-size: 11px;
