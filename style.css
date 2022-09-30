@@ -62,13 +62,14 @@ p {
   gap: 9.375rem;
 }
 
-.eth {
+.price >div {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   font-weight: bold;
   text-align: center;
+  font-size: .8rem;
 }
 
 .eth img {
@@ -78,10 +79,29 @@ p {
 .eth p {
   color: var(--Cyan);
 }
+.time {
+  font-weight: bold;
+}
 
+.time img {
+    padding-inline: .3rem;
+}
+
+.time p{
+    color: var(--Soft-blue);
+}
+
+
+.line{
+  margin-block: .625rem;
+  width: 100%;
+  height: .125rem;
+  border-radius: .625rem;
+  background-color: var(--Very-dark-blue);
+}
 /*footer*/
 .attribution {
-  font-size: 11px;
+  font-size: .6875rem;
   text-align: center;
 }
 
