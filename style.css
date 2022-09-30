@@ -55,6 +55,10 @@ p {
   line-height: 1.7rem;
 }
 
+.texts p {
+  margin-block: 1rem;
+}
+
 .price {
   display: flex;
   align-items: center;
