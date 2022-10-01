@@ -126,6 +126,15 @@ p {
   font-weight: 400;
 }
 
+.activeState {
+  transition: .1s ease;
+}
+
+.activeState:hover,.activeState:active {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
 /*footer*/
 .attribution {
   font-size: .6875rem;
