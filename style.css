@@ -9,6 +9,7 @@
 :root {
   --Soft-blue: hsl(215, 51%, 70%);
   --Cyan: hsl(178, 100%, 50%);
+  --Cyan-trs: hsl(178, 100%, 50%, .4);
   /**/
   --Very-dark-blue: hsl(217, 54%, 11%);
   --Very-dark-blue: hsl(216, 50%, 16%);
@@ -38,6 +39,34 @@ body {
   border-radius: .7rem;
   padding: 1.35rem;
   margin: 2rem;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card::after {
+  content: url(./images/icon-view.svg);
+  background: var(--Cyan-trs);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.25s ease;
+  border-radius: .7rem;
+}
+
+.card:hover::after {
+  opacity: 1;
 }
 
 .image {
@@ -130,7 +159,8 @@ p {
   transition: .1s ease;
 }
 
-.activeState:hover,.activeState:active {
+.activeState:hover,
+.activeState:active {
   color: var(--Cyan);
   cursor: pointer;
 }
